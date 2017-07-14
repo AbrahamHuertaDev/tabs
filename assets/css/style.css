@@ -154,3 +154,7 @@
 .chrome-tabs .chrome-tab-close:hover:active {
   background: #b74a3b;
 }
+
+.console{
+  height: 93.8vh;
+}

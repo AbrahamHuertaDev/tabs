@@ -135,7 +135,7 @@
       const tabEl = this.createNewTabEl()
 
       tabEl.classList.add('chrome-tab-just-added')
-      tabEl.classList.add('chrome-tab-id-' + tabProperties.content);
+      jquery(tabEl).data('content', tabProperties.content)
       setTimeout(() => tabEl.classList.remove('chrome-tab-just-added'), 500)
 
       tabProperties = Object.assign({}, defaultTapProperties, tabProperties)
@@ -153,7 +153,9 @@
       if (currentTab) currentTab.classList.remove('chrome-tab-current')
       tabEl.classList.add('chrome-tab-current')
       this.fixZIndexes()
-      console.log(tabEl)
+      jquery('.chrome-content-one').hide();
+      jquery('#' + jquery(tabEl).data('content')).show();
+
       this.emit('activeTabChange', { tabEl })
     }
 
