@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/AbrahamHuertaDev/tabs",
   "keywords": [
     "Electron",
     "quick",
@@ -18,5 +18,13 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "asterisk.io": "^0.1.1",
+    "ev-emitter": "^1.1.1",
+    "get-size": "^2.0.2",
+    "jquery": "^3.2.1",
+    "unidragger": "^2.2.3",
+    "unipointer": "^2.2.0"
   }
 }

@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <title>Asterisk console</title>
+    <link rel="stylesheet" href="node_modules/electron-tabs/electron-tabs.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+    <div class="chrome-tabs">
+        <div class="chrome-tabs-content"></div>
+        <div class="chrome-tabs-bottom-bar"></div>
+    </div>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+    <div class="chrome-content">
+        <div id="settings" class="chrome-content-one">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam et, repudiandae minus, quod veritatis dicta assumenda culpa atque ipsam dolore error, illum eius mollitia nesciunt maiores excepturi voluptatibus eaque laudantium.
+        </div>
+    </div>
+  
+    <script>
+        require('./assets/js/ev-emitter.js')
+        var jquery = require('jquery');
+        var Draggabilly = require('./assets/js/draggabilly.js')
+        require('./assets/js/tabs.js')
+        require('./assets/js/renderer.js')
+    </script>
+</body>
 </html>
